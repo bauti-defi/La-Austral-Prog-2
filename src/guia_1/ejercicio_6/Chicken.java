@@ -4,6 +4,6 @@ public class Chicken extends Bird {
 
 
 	public Chicken() {
-		super(false);
+		super(false, 3.4);
 	}
 }

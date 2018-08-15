@@ -6,9 +6,11 @@ public abstract class Bird {
 
 	private int gramsOfFoodEaten;
 	private final boolean canFly;
+	private final double birdCharacteristic;
 
-	public Bird(boolean canFly) {
+	public Bird(boolean canFly, double birdCharacteristic) {
 		this.canFly = canFly;
+		this.birdCharacteristic = birdCharacteristic;
 	}
 
 	public void eat(int gramsOfFood) {
@@ -23,11 +25,11 @@ public abstract class Bird {
 		if (!canFly()) {
 			throw new GroundBirdException();
 		}
-		return gramsOfFoodEaten * 0.3;
+		return gramsOfFoodEaten * 0.8 * birdCharacteristic;
 	}
 
 	public double walk() {
-		return gramsOfFoodEaten * 0.5;
+		return gramsOfFoodEaten * 1.5 * birdCharacteristic;
 	}
 
 	public boolean isHungry() {

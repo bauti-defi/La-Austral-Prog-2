@@ -4,6 +4,6 @@ public class Condor extends Bird {
 
 
 	public Condor() {
-		super(true);
+		super(true, 1.4);
 	}
 }
