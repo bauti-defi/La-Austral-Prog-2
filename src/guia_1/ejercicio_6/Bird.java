@@ -5,12 +5,19 @@ import guia_2.ejercicio_2.Traversable;
 public abstract class Bird {
 
 	private int gramsOfFoodEaten;
+	private final boolean canFly;
+
+	public Bird(boolean canFly) {
+		this.canFly = canFly;
+	}
 
 	public void eat(int gramsOfFood) {
 		gramsOfFoodEaten += gramsOfFood;
 	}
 
-	public abstract boolean canFly();
+	public boolean canFly() {
+		return canFly;
+	}
 
 	public double fly() throws GroundBirdException {
 		if (!canFly()) {
