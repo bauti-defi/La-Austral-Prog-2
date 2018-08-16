@@ -25,11 +25,17 @@ public abstract class Bird {
 		if (!canFly()) {
 			throw new GroundBirdException();
 		}
-		return gramsOfFoodEaten * 0.8 * birdCharacteristic;
+		return move(0.7);
 	}
 
 	public double walk() {
-		return gramsOfFoodEaten * 1.5 * birdCharacteristic;
+		return move(0.9);
+	}
+
+	private double move(double burnRate) {
+		final double distance = gramsOfFoodEaten * burnRate * birdCharacteristic;
+		gramsOfFoodEaten = 0;
+		return distance;
 	}
 
 	public boolean isHungry() {
