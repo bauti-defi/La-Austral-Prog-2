@@ -23,6 +23,7 @@ public abstract class Account {
 	}
 
 	public long getTransactionHistorySum() {
+
 		return transactionHistorySum;
 	}
 
