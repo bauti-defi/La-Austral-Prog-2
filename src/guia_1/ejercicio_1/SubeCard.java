@@ -5,7 +5,7 @@ public class SubeCard {
 	private long balance;
 
 	public SubeCard() {
-
+		this(0);
 	}
 
 	public SubeCard(final long balance) {
