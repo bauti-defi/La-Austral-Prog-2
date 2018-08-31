@@ -15,6 +15,7 @@ public class HotelTest {
 
 	@Test
 	public void test002_aReservationShouldReturnRoom() {
+		//hola
 		Hotel sheraton = new Hotel();
 		Habitacion habitacion = new Suite(1);
 		sheraton.reserve(habitacion, "10/08");
