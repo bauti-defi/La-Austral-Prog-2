@@ -11,7 +11,7 @@ public class Mezclador extends Utensilio{
     @Override
     public Ingrediente preparar(List<Ingrediente> ingredientes) {
         for (int i = 0; i < ingredientes.size(); i++) {
-            if(ingredientes.get(i).getTipo().equals("Harina") && ingredientes.get(i+1).getTipo().equals("Agua")){
+            if(contains("Harina", ingredientes) && contains("Agua", ingredientes)){
                 return new Ingrediente("Masa");
             }
         }

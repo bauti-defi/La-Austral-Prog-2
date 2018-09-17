@@ -50,4 +50,13 @@ public class CocinaTest {
         ingredientes.add(new Ingrediente("Pan"));
         assertEquals("Rodajas", cuchillo.preparar(ingredientes).getTipo());
     }
+
+    @Test
+    public void test004_CuchilloShouldMakeRodajasIfIngredientesContainPanAndOthers(){
+        ElementoDeCocina cuchillo = new Cuchillo();
+        List<Ingrediente> ingredientes = new ArrayList<>();
+        ingredientes.add(new Ingrediente("Pan"));
+        ingredientes.add(new Ingrediente("Otro"));
+        assertEquals("Rodajas", cuchillo.preparar(ingredientes).getTipo());
+    }
 }
