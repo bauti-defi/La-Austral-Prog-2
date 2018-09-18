@@ -12,8 +12,6 @@ public class HornoDeBarro extends Electrodomestico{
         for (int i = 0; i < ingredientes.size(); i++) {
 
             if(contains("Masa", ingredientes)){
-            if(ingredientes.get(i).getTipo().equals("Masa")){
-
                 System.out.println("Cocinando por 2 minutos");
                 return new Ingrediente("Pan");
             }
