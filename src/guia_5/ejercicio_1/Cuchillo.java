@@ -10,7 +10,7 @@ public class Cuchillo extends Utensilio{
     @Override
     public Ingrediente preparar(List<Ingrediente> ingredientes) {
         for (int i = 0; i < ingredientes.size(); i++) {
-            if(ingredientes.get(i).getTipo().equals("Pan")){
+            if(contains("Pan", ingredientes)){
                 System.out.println("Cocinando por 5 minutos");
                 return new Ingrediente("Rodajas");
             }
