@@ -10,6 +10,7 @@ public class HornoDeBarro extends Electrodomestico{
     @Override
     public Ingrediente preparar(List<Ingrediente> ingredientes) {
         for (int i = 0; i < ingredientes.size(); i++) {
+
             if(contains("Masa", ingredientes)){
                 System.out.println("Cocinando por 2 minutos");
                 return new Ingrediente("Pan");
