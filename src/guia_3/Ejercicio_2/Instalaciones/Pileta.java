@@ -13,6 +13,11 @@ public class Pileta extends Instalacion {
         return nombre_instalacion;
     }
 
+    @Override
+    public void crearClase() {
+
+    }
+
     public void crearClase(String nombre_clase, String nombre_instalacion, int prof_id, int sociosU){
         Clase clase_nueva = new Clase(nombre_clase, prof_id, sociosU);
     }
