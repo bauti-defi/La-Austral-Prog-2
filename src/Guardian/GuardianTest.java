@@ -62,7 +62,7 @@ public class GuardianTest {
     public void test006_aGuardianShouldAcceptFormalPeople(){
         Guardian<Person> guardian = new Guardian<Person>();
 
-        Person vip = new VIP("Richard", 17);
+        Person vip = new VIP("Richard", 17, false);
 
         assertEquals(true, guardian.accept(vip, vip.isInformal()));
     }

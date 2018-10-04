@@ -1,7 +1,7 @@
 package Guardian;
 
 public class VIP extends Person{
-    public VIP(String name, int age) {
-        super(name, age, false, false);
+    public VIP(String name, int age, boolean informal) {
+        super(name, age, informal, false);
     }
 }
