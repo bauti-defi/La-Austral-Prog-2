@@ -1,4 +1,4 @@
-package guia_7;
+package guia_7.ejercicio_1;
 
 import java.util.Iterator;
 
